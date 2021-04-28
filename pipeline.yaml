@@ -7,12 +7,12 @@ jobs:
       - task: Cmdline@2
         inputs:
           script: >-
-          echo "
-          terraform
-          plan
-          -out=terraform.tfplan
-          -var
-          -var
-          -var
-          -var
-          -var"
+            echo "
+            terraform
+            plan
+            -out=terraform.tfplan
+            -var
+            -var
+            -var
+            -var
+            -var"
