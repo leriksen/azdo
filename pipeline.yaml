@@ -1,0 +1,17 @@
+jobs:
+  - job: Plan
+    displayName: Terraform Plan
+    workspace:
+      clean: all
+    steps:
+      - script: >-
+        echo "
+        terraform
+        plan
+        -out=terraform.tfplan
+        -var
+        -var
+        -var
+        -var
+        -var
+        "
