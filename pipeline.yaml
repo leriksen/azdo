@@ -9,6 +9,7 @@ jobs:
           script: >-
             echo "
             terraform
+            $(key)
             plan
             -out=terraform.tfplan
             -var

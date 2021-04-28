@@ -3,6 +3,9 @@ name: $(BuildDefinitionName).$(Build.Reason)$(Rev:.r)
 trigger: none
 pr: none
 
+variables:
+  - group: testing
+
 stages:
   - stage: Plan
     jobs:
