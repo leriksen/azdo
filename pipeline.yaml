@@ -4,14 +4,15 @@ jobs:
     workspace:
       clean: all
     steps:
-      - script: >-
-        echo "
-        terraform
-        plan
-        -out=terraform.tfplan
-        -var
-        -var
-        -var
-        -var
-        -var
-        "
+      - task: Cmdline@2
+        inputs:
+          script: >-
+          echo "
+          terraform
+          plan
+          -out=terraform.tfplan
+          -var
+          -var
+          -var
+          -var
+          -var"
