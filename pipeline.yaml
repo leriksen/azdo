@@ -5,6 +5,9 @@ jobs:
       clean: all
     steps:
       - task: Cmdline@2
+        displayName: >-
+          multiline
+          displayname
         inputs:
           script: >-
             echo "
